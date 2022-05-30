@@ -1,0 +1,520 @@
+/* css.css for danieljackson.no */
+
+.hidden {
+	display: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+html {
+	padding: 0;
+	margin: 0;
+}
+
+
+#content p,
+#content ul,
+#content blockquote {
+	width: 500px;
+	margin-bottom: 1em;
+}
+
+#logo {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 260px;
+}
+
+#logo h1 {
+font-size: 2.25em;
+
+}
+
+#logo h1 span {
+	padding-left: 3px;
+}
+
+#logo a {
+	display: block;
+	color: rgb(85,80,80);
+	text-decoration: none;
+	margin-left: 78px;
+	margin-top: 0.85em;
+	line-height: 110%;
+	font-weight: 300;
+}
+
+#menubar {
+	width: 200px;
+	position: fixed;
+	top: 8em;
+	left: 0;
+	padding-left: 60px;
+	background-image: url('marker.png');
+	background-position: right 10px;
+	background-repeat: no-repeat;
+}
+
+#menubar ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+	#menubar li {
+		list-style: none;
+	}
+
+	#menubar a {
+		color: rgb(85,80,80);
+		text-decoration: none;
+		display: block;
+		float: left;
+		width: 160px;
+		padding: 10px 20px;
+	}
+	
+	#menubar ul ul a {
+		border-left: 2px solid white;
+		width: 138px;
+	}
+	
+	#menubar ul ul a.first {
+		padding-top: 5px;
+		margin-top: 5px;
+	}
+	#menubar ul ul a.last {
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+	
+	#menubar ul ul {
+		padding-left: 20px;
+	}
+
+	
+	
+	#main a:visited {
+		color: rgb(115,110,110);
+	}
+	
+	#menubar a:hover,
+	#main a:hover {
+		color: rgb(200,60,60);
+	}
+	
+	
+	#menubar a.current	{
+		color: rgb(128,9,9);
+	}
+	
+
+
+#main {
+	padding: 0em 0em 600px 2em;
+	border-left: 260px solid rgb(225,225,225);
+}
+
+#main a {
+	text-decoration: none;
+	background-color: rgb(232,230,230);
+	color: rgb(40,40,40);
+	padding: 0 2px;
+}
+
+.hovertip {
+	border-bottom: 1px dashed;
+}
+.hovertip:hover {
+	position: relative;
+}
+.hovertip span {
+	display: none;
+}
+.hovertip:hover span {
+	border: rgb(135,130,130) 1px dashed;
+	padding: 5px 10px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 1.33em;
+	width: 200px;
+	z-index: 2000;
+	background-color: rgb(232,230,230);
+}
+
+
+/* colors */
+
+#content .white {
+	background-color: white;
+	opacity: 0.90;
+	padding-top: 1em;
+	z-index: 1;
+}
+
+/* images and Video*/
+
+iframe {
+	max-width: 99% !important;
+}
+
+.large {
+	width: 600px; /* For big screens */
+}
+
+.huge {
+	width: 95%;
+}
+
+.full {
+	width: 500px;
+}
+
+.half {
+	width: 300px;
+	margin-right: 3em;
+	margin-bottom: 1em;
+	float: left;
+}
+
+.bighalf {
+	float: left;
+	max-width: 600px;
+}
+
+.half p,
+.half ul,
+.half h3,
+.half h4,
+.half h5 {
+	width: auto !important;
+}
+	
+.two-column {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+@media screen and (max-width: 1201px) {
+	.two-column {
+		display: block;
+	}
+}
+.column {
+	max-width: 600px;
+	padding-right: 20px;
+}
+
+.column p,
+.column ul,
+.column h3,
+.column h4,
+.column h5 {
+	width: auto !important;
+	max-width: 500px;
+	min-width: 200px;
+}
+
+.full-image img {
+	width: 100%;
+}
+.images-overlap  {
+	position: relative;
+}
+.images-overlap img {
+	width: 90%;
+	margin: 0 5%;
+}
+.images-overlap img.overlap {
+	width: 100%;
+	margin-top: -55%;
+	margin-left: 0px;
+}
+
+img#programmer {
+	margin-left: 50%;
+	width: 50%;
+}
+@media screen and (max-width: 1201px) {
+	img#programmer {
+		right: -40px;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	#designprosess  {
+		margin-top: -100px;
+	}
+}
+#designprosess img.overlap {
+	position: relative;
+	z-index: 10;
+	opacity: 1;
+	margin-top: -30px;
+	/* margin-left: 400px; */
+}
+.right {
+	float: right;
+}
+
+img.right {
+	margin-left: 30px;
+}
+
+#me {
+	padding-top: 2em;
+	margin-bottom: -2em;
+	height: 250px;
+}
+
+#lerumbottle {
+	margin-right: -180px;
+	margin-left: -50px;
+}
+
+#sparebosse {
+	margin-bottom: -50px;
+	z-index: -1;
+}
+
+.carousel {
+	display: relative;
+	overflow: hidden;
+}
+
+.carousel  div {
+	background-color: black;
+	width: 95%;
+	height: 325px;
+	overflow: hidden;
+}
+
+.carousel img {
+	opacity: 0.7;
+	margin-left: -20%;
+	z-index: 1;
+
+}
+.carousel div.current img {
+	margin-left: 0;
+	opacity: 1;
+	z-index: -1;
+}
+
+/* typography */
+
+body {
+	font-family: 'Open Sans', verdana, sans-serif;
+	font-size: 15px;
+	line-height: 140%;
+}
+
+
+#main h2, #main h3 {
+	margin-top: 0em;
+	font-weight: 300; 
+	font-size: 2em;
+	line-height: 1em;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+#main h5 {
+	margin-bottom: 0;
+	font-size: 1em;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#main h2 {
+	font-style: italic;
+	margin-top: 1em;
+}
+
+#main h2#projects,
+h2#skills {
+	margin-bottom: 0em;
+}
+#main h3#teknisk {
+	margin-top: 0;
+	padding-top: 0.5em;
+}
+
+#main h3 {
+	font-size: 4em;
+	margin-bottom: 0.75em;
+}
+
+#contact, .clear {
+	clear: both;
+}
+
+#bottomBox {
+	clear: both;
+	padding-bottom: 4em;
+}
+
+#main {
+	padding-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.half {
+		float: none;
+		width: auto;
+		margin-right: 0em;
+
+	}
+	.half img {
+		max-width: 100%;
+		width: auto !important;
+	}
+	.full {
+		width: auto;
+	}
+	.large {
+		width: 95%;
+	}
+	#lerumbottle {
+		margin-right: -20px;
+	}
+
+	#content p,
+	#content ul,
+	#content blockquote {
+		width: auto;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#main {
+			border-left: 220px solid rgb(225,225,225);
+	}
+	#menubar {
+		padding-left: 20px;
+	}
+	#logo {
+		margin-left: -40px;
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+
+
+
+	button {
+    display: inline-block;
+    border: none;
+
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	}
+
+	button:hover {
+		text-decoration: underline;
+	}
+
+	button:focus {
+			text-decoration: underline;
+	}
+
+	button:active {
+			transform: scale(0.99);
+	}
+
+	#main {
+			float: none;
+			border-left: 0;
+			padding-bottom: 0px;
+	}
+	#menubar {
+		width: auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		background-color: rgb(225,225,225);
+		margin: 0;
+		padding: 0 30px 20px 30px;
+		background-image: none;
+	}
+	#menubar h2 {
+		margin: 0;
+	}
+	#menubar #menu {
+		display: none;
+		padding-top: 20px;
+		margin-left: -20px;
+	}
+	#menubar h2.hidden {
+		display: block;
+		font-size: 1em;
+
+	}
+	#menubar h2 button {
+		cursor: pointer;
+		padding: 20px;
+		margin-left: -20px;
+		position: absolute;
+		top: -42px;
+		right: 30px;
+		z-index: 4;
+		color: rgb(85,80,80);
+	}
+	#menubar li a {
+		float: none;
+	}
+	#logo {
+		position: relative;
+		background-color: rgb(225,225,225);
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		margin-left: 0;
+	}
+	#logo h1 {
+		margin: 0;
+	}
+	#logo h1 a {
+		margin: 0;
+		padding: 20px 30px 0 30px;
+	}
+	#me {
+		width: 95%;
+		height: auto;
+	}
+}
+
+
+blockquote {
+	border-left: 8px solid rgb(225,225,225);
+	padding: 5px 0px 5px 20px;
+	margin-left: 0;
+}
+
+blockquote cite {
+	display: block;
+	margin-top: 1em;
+}
+
+blockquote footer a {
+	display: inline-block;
+}
